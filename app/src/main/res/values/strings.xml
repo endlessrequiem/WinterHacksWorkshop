@@ -2,4 +2,5 @@
     <string name="app_name">WinterHacksWorkshop</string>
     <string name="title_first">First Fragment</string>
     <string name="title_second">Second Fragment</string>
+    <string name="button_text">Press Me</string>
 </resources>
