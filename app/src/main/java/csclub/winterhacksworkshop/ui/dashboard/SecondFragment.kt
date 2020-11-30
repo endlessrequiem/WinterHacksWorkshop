@@ -24,9 +24,6 @@ class SecondFragment : Fragment() {
         testButtonKotlin.setOnClickListener {
             secondFragmentViewModel!!.text.observe(viewLifecycleOwner, Observer { s -> textView.text = s })
         }
-
-
-
         return root
     }
 }
