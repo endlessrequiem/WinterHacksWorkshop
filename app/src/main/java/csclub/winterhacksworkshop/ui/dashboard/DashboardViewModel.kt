@@ -10,6 +10,6 @@ class DashboardViewModel : ViewModel() {
         get() = mText
 
     init {
-        mText.value = "This is dashboard fragment"
+        mText.value = "Hello World (But in Kotlin)"
     }
 }

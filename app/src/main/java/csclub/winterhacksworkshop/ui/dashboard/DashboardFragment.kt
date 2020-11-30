@@ -15,9 +15,8 @@ class DashboardFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater,
                               container: ViewGroup?, savedInstanceState: Bundle?): View? {
         dashboardViewModel = ViewModelProvider(this).get(DashboardViewModel::class.java)
-        val root = inflater.inflate(R.layout.fragment_dashboard, container, false)
-        val textView = root.findViewById<TextView>(R.id.text_dashboard)
-        dashboardViewModel!!.text.observe(viewLifecycleOwner, Observer { s -> textView.text = s })
+        val root = inflater.inflate(R.layout.fragment_second, container, false)
+
         return root
     }
 }
