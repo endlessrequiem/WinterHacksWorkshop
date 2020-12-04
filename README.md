@@ -38,7 +38,7 @@
 
 3. Button in fragment_second.xml
 - Find fragment_first.xml in app/src/main/res/layout
-- Just like in the previous one, paste this underneath the TextView item.
+- Just like in the previous one, paste this below the TextView item.
 ```xml
 <Button
         android:id="@+id/buttonTestKotlin"
