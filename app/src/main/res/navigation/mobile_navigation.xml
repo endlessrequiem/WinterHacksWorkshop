@@ -7,13 +7,13 @@
 
     <fragment
         android:id="@+id/navigation_first"
-        android:name="csclub.winterhacksworkshop.ui.home.FirstFragment"
+        android:name="csclub.winterhacksworkshop.ui.firstfrag.FirstFragment"
         android:label="@string/title_first"
         tools:layout="@layout/fragment_first" />
 
     <fragment
         android:id="@+id/navigation_second"
-        android:name="csclub.winterhacksworkshop.ui.dashboard.SecondFragment"
+        android:name="csclub.winterhacksworkshop.ui.secondfrag.SecondFragment"
         android:label="@string/title_second"
         tools:layout="@layout/fragment_second" />
 

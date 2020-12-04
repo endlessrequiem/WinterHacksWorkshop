@@ -1,4 +1,4 @@
-package csclub.winterhacksworkshop.ui.dashboard
+package csclub.winterhacksworkshop.ui.secondfrag
 
 import android.os.Bundle
 import android.view.LayoutInflater

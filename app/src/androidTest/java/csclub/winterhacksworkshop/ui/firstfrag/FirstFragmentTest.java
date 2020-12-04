@@ -1,4 +1,4 @@
-package csclub.winterhacksworkshop.ui.home;
+package csclub.winterhacksworkshop.ui.firstfrag;
 
 import androidx.test.ext.junit.rules.ActivityScenarioRule;
 

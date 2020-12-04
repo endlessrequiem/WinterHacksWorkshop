@@ -1,4 +1,4 @@
-package csclub.winterhacksworkshop.ui.home;
+package csclub.winterhacksworkshop.ui.firstfrag;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -18,8 +18,6 @@ import csclub.winterhacksworkshop.R;
 public class FirstFragment extends Fragment {
 
     private FirstFragmentViewModel firstFragmentViewModel;
-    Button testButton;
-
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -28,7 +26,7 @@ public class FirstFragment extends Fragment {
         View root = inflater.inflate(R.layout.fragment_first, container, false);
         final TextView textView = root.findViewById(R.id.text_firstfragment);
 
-        testButton = root.findViewById(R.id.buttonTest);
+        Button testButton = root.findViewById(R.id.buttonTest);
 
         testButton.setOnClickListener(new View.OnClickListener() {
             @Override
