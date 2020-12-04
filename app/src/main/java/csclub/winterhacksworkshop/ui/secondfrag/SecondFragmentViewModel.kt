@@ -1,4 +1,4 @@
-package csclub.winterhacksworkshop.ui.dashboard
+package csclub.winterhacksworkshop.ui.secondfrag
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
