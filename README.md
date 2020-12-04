@@ -17,26 +17,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 ```
 
-2. Button in fragment_second.xml
-- Find fragment_first.xml in app/src/main/res/layout
-- Just like in the previous one, paste this under the TextView.
-```xml
-<Button
-        android:id="@+id/buttonTestKotlin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="142dp"
-        android:layout_marginTop="264dp"
-        android:layout_marginEnd="142dp"
-        android:layout_marginBottom="419dp"
-        android:text="@string/button_text"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-```
-
-3. Add code in FirstFragment.java
+2. Add code in FirstFragment.java
 - Find FirstFragment.java in  app/src/main/java/csclub/winterhacksworkshop/ui/firstfrag
 - in the onCreateView() method add this block of code underneath the line "final TextView textView = root.findViewById(R.id.text_firstfragment);"
 ```java
@@ -53,6 +34,25 @@
                 });
             }
         });
+```
+
+3. Button in fragment_second.xml
+- Find fragment_first.xml in app/src/main/res/layout
+- Just like in the previous one, paste this under the TextView.
+```xml
+<Button
+        android:id="@+id/buttonTestKotlin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="142dp"
+        android:layout_marginTop="264dp"
+        android:layout_marginEnd="142dp"
+        android:layout_marginBottom="419dp"
+        android:text="@string/button_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 ```
 
 4. Add code in SecondFragment.kt
