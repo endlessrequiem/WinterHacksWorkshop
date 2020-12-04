@@ -1,6 +1,6 @@
 1. Button in fragment_first.xml
-⋅⋅* Find fragment_first.xml in app/src/main/res/layout
-⋅⋅* Open "Code" on top right corner, enter the following under the TextView item.
+- Find fragment_first.xml in app/src/main/res/layout
+- Open "Code" on top right corner, enter the following under the TextView item.
 ```xml
 <Button
         android:id="@+id/buttonTest"
@@ -18,8 +18,8 @@
 ```
 
 2. Button in fragment_second.xml
-⋅⋅* Find fragment_first.xml in app/src/main/res/layout
-⋅⋅* Just like in the previous one, paste this under the TextView.
+- Find fragment_first.xml in app/src/main/res/layout
+- Just like in the previous one, paste this under the TextView.
 ```xml
 <Button
         android:id="@+id/buttonTestKotlin"
@@ -37,8 +37,8 @@
 ```
 
 3. Add code in FirstFragment.java
-⋅⋅* Find FirstFragment.java in  app/src/main/java/csclub/winterhacksworkshop/ui/firstfrag
-⋅⋅* in the onCreateView() method add this block of code underneath the line "final TextView textView = root.findViewById(R.id.text_firstfragment);"
+- Find FirstFragment.java in  app/src/main/java/csclub/winterhacksworkshop/ui/firstfrag
+- in the onCreateView() method add this block of code underneath the line "final TextView textView = root.findViewById(R.id.text_firstfragment);"
 ```java
         Button testButton = root.findViewById(R.id.buttonTest);
 
@@ -56,9 +56,9 @@
 ```
 
 4. Add code in SecondFragment.kt
-⋅⋅* Find SecondFragment.kt in app/src/main/java/csclub/winterhacksworkshop/ui/secondfrag
-⋅⋅* in the onCreateView() method add the below block of code underneath the line "val textView = root.findViewById<TextView>(R.id.text_secondfragment)"
-⋅⋅* Reminder: Kotlin doesn't need semicolons!
+- Find SecondFragment.kt in app/src/main/java/csclub/winterhacksworkshop/ui/secondfrag
+- in the onCreateView() method add the below block of code underneath the line "val textView = root.findViewById<TextView>(R.id.text_secondfragment)"
+- Reminder: Kotlin doesn't need semicolons!
 ```kotlin
         val testButtonKotlin: Button = root.findViewById(R.id.buttonTestKotlin)
 
@@ -69,8 +69,8 @@
 ```
 
 5. Add code in FirstFragmentTest
-⋅⋅* Find FirstFragmentTest in app/src/androidTest/java/csclub/winterhacksworkshop/ui/firstfrag
-⋅⋅* in ButtonTest() method add the following code:
+- Find FirstFragmentTest in app/src/androidTest/java/csclub/winterhacksworkshop/ui/firstfrag
+- in ButtonTest() method add the following code:
 ```java
         onView((withId(R.id.buttonTest)))
                 .perform(click());
