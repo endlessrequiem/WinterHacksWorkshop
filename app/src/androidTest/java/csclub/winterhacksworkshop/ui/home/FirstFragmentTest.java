@@ -22,8 +22,6 @@ public class FirstFragmentTest {
 
     @Test
     public void ButtonTest() {
-
-
         onView((withId(R.id.buttonTest)))
                 .perform(click());
 
