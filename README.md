@@ -21,19 +21,18 @@
 - Find FirstFragment.java in  app/src/main/java/csclub/winterhacksworkshop/ui/firstfrag
 - in the onCreateView() method add this block of code underneath the line "final TextView textView = root.findViewById(R.id.text_firstfragment);"
 ```java
-        Button testButton = root.findViewById(R.id.buttonTest);
-
         testButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                firstFragmentViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
                     @Override
-                    public void onChanged(@Nullable String s) {
-                        textView.setText(s);
+                    public void onClick(View v) {
+                        firstFragmentViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
+                            @Override
+                            public void onChanged(@Nullable String s) {
+                                textView.setText(s);
+                                Toast.makeText(getActivity(), "Button Pressed", Toast.LENGTH_SHORT).show();
+                            }
+                        });
                     }
                 });
-            }
-        });
 ```
 
 3. Button in fragment_second.xml
@@ -60,11 +59,11 @@
 - in the onCreateView() method add the below block of code underneath the line "val textView = root.findViewById<TextView>(R.id.text_secondfragment)"
 - Reminder: Kotlin doesn't need semicolons!
 ```kotlin
-        val testButtonKotlin: Button = root.findViewById(R.id.buttonTestKotlin)
-
         testButtonKotlin.setOnClickListener {
-            secondFragmentViewModel!!.text.observe(viewLifecycleOwner, Observer { s -> textView.text = s })
-        }
+                    secondFragmentViewModel!!.text.observe(viewLifecycleOwner, Observer { s -> textView.text = s })
+                    Snackbar.make(requireView(), "I'm a Snackbar notification",
+                            Snackbar.LENGTH_SHORT).show()
+                }
       
 ```
 
