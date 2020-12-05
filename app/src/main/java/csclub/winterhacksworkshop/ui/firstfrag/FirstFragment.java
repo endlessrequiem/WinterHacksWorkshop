@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -35,6 +36,7 @@ public class FirstFragment extends Fragment {
                     @Override
                     public void onChanged(@Nullable String s) {
                         textView.setText(s);
+                        Toast.makeText(getActivity(), "Button Pressed", Toast.LENGTH_SHORT).show();
                     }
                 });
             }
